@@ -19,6 +19,11 @@ class App extends React.Component {
           <ScrollView style={styles.scrollViewContainer}>
             <CounterContainer />
           </ScrollView>
+          <Text> Total </Text>
+          <Text style={styles.counter}> {8} </Text>
+          
+            <Text style={styles.boton}>Guardar</Text>
+         
         </View>
       </ReduxProvider>
     );
@@ -26,6 +31,33 @@ class App extends React.Component {
 }
 
 const styles = StyleSheet.create({
+
+  counter: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    backgroundColor: '#eee',
+    borderBottomWidth: 2,
+    borderColor: '#e1e1e1',
+    marginVertical: 10,
+    fontSize: 35,
+    fontWeight: '700',
+    textAlign: 'center',
+  },
+
+  boton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    backgroundColor: '#eee',
+    borderBottomWidth: 2,
+    borderColor: '#e1e1e1',
+    marginVertical: 10,
+    fontSize: 25,
+    fontWeight: '700',
+    textAlign: 'center',
+  },
+
   container: {
     flex: 1,
     marginTop: 20,

@@ -9,15 +9,12 @@ class CounterContainer extends React.Component {
 
     return counter.items.map((item, index) => (
       <View key={index} style={styles.container} >
-        <Text style={styles.index}> {index + 1} </Text>
-
-        <Text style={styles.counter}> {item} </Text>
 
         <View style={styles.buttonsContainer}>
           <TouchableOpacity style={styles.buttonAdd} onPress={() => increaseCounter(index)} >
             <Text style={styles.icon}>+</Text>
           </TouchableOpacity>
-
+            <Text style={styles.counter}> {item} </Text>
           <TouchableOpacity style={styles.buttonRemove} onPress={() => decreaseCounter(index)} >
             <Text style={styles.icon}>-</Text>
           </TouchableOpacity>
@@ -46,11 +43,11 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
 
-  index: {
+ /* index: {
     color: '#999',
     paddingLeft: 7,
     paddingBottom: 50,
-  },
+  },*/
 
   counter: {
     flex: 1,
@@ -58,10 +55,12 @@ const styles = StyleSheet.create({
     fontSize: 45,
     fontWeight: '700',
     textAlign: 'center',
+    paddingVertical: 15,
   },
 
   buttonsContainer: {
     flexDirection: 'row',
+    //justifyContent: 'space-between'
   },
 
   buttonAdd: {

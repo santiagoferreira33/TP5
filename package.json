@@ -1,7 +1,7 @@
 {
-  "name": "github.com/utnfrlp/aplicacionesmoviles:5--redux-barebones",
+  "name": "github.com/santiagoferreira33/tp5",
   "version": "0.0.0",
-  "description": "utnfrlp/aplicacionesmoviles @ Oct 22, 2018",
+  "description": "santiagoferreira33/TP5 @ Oct 23, 2018",
   "author": null,
   "private": true,
   "main": "node_modules/expo/AppEntry.js",

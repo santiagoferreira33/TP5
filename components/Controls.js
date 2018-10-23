@@ -9,11 +9,11 @@ class Controls extends React.Component {
 
     return (
       <View style={styles.buttonsContainer}>
-          <TouchableOpacity style={styles.buttonAdd} onPress={() => increaseCounter(index)} >
+          <TouchableOpacity style={styles.buttonAdd} onPress={addCounter}>
             <Text style={styles.icon}>+</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.buttonRemove} onPress={() => decreaseCounter(index)} >
+          <TouchableOpacity style={styles.buttonRemove}  onPress={removeCounter}>
             <Text style={styles.icon}>-</Text>
           </TouchableOpacity>
         </View>
@@ -32,7 +32,7 @@ class Controls extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
+ /* container: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-around',
@@ -47,6 +47,28 @@ const styles = StyleSheet.create({
   text: {
     color: '#fff',
     fontWeight: '700',
+  },*/
+
+    buttonsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+  },
+
+  buttonAdd: {
+    backgroundColor: '#2ecc71',
+    paddingVertical: 15,
+    paddingHorizontal: 35,
+  },
+
+  buttonRemove: {
+    backgroundColor: '#e74c3c',
+    paddingVertical: 15,
+    paddingHorizontal: 35,
+  },
+
+  icon: {
+    color: '#2c3e50',
+    fontSize: 45,
   },
 });
 

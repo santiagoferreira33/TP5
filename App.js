@@ -11,7 +11,7 @@ class App extends React.Component {
       <ReduxProvider store={store}>
         <View style={styles.container}>
           <Text style={styles.title}>
-            Nuevo Total
+            dale
           </Text>
 
           <Controls />
